@@ -1,0 +1,244 @@
+@media only screen and (max-width: 1000px) {
+	
+	/* header */
+	.desktopMenu { display: none;  }
+	.mobileMenu  { display: block; }
+
+	header .col-md-4 {
+		overflow: hidden;
+		width: 33.33%;
+		float: left;
+	}
+	header .pull-right,
+	header .pull-left {
+		float: none !important;
+	}
+	header .box {
+		max-width: 100%;
+		text-align: center !important;
+	}
+	header img {
+		float: none;
+		margin: 0 auto;
+	}
+	header button.mobilemenuBTN {		
+		background-color: #17c3d1;
+	    width: 100%;
+	    padding: 10px 0;
+	    text-align: center;
+	    border: 0;
+	    color: #fff;
+	    text-transform: uppercase;
+	    font-size: 20px;
+	    letter-spacing: 2px;
+	}
+	header button.mobilemenuBTN .fa {
+		margin: 0 10px 0 0;
+	}
+	header ul.menu {
+		overflow: hidden;
+    	border: 1px solid #ccc;
+    	margin: 0;
+	}
+	header ul.menu li {
+		width: 100%;
+	}	
+	header ul.menu li:after {
+		display: none;
+	}
+	header ul.menu li a {
+		letter-spacing: 5px;
+	}
+	header ul.menu li:hover {
+		background-color: #ccc;
+	}
+	header ul.menu li a:hover {
+		text-decoration: underline;
+	}
+
+	/* slider */
+	.slickDesktop { display: none !important; }
+	.slickMobile { display: block !important; }
+
+
+	/* ABOUT */
+	#about .content {
+		min-height: 100%;
+	}
+	#about .left .title:after {
+	    background-color: #1f2033;
+	    content: '';
+	    width: 20px;
+	    height: 40px;
+	    transform: skewy(-30deg);
+	    position: absolute;
+	    right: 0;
+	    top: 11px;
+	}	
+	#about .left .content {
+		margin-right: 20px;
+	}
+	#about .right .title:after {
+	    background-color: #1f2033;
+	    content: '';
+	    width: 20px;
+	    height: 40px;
+	    transform: skewy(30deg);
+	    position: absolute;
+	    left: 0;
+	    top: 11px;
+	}
+	#about .right .content {
+		margin-left: 20px;
+	}
+
+	/* WALLET */
+	#wallet .title:before {
+	    background-color: #1f2033;
+	    content: '';
+	    width: 20px;
+	    height: 40px;
+	    transform: skewy(30deg);
+	    position: absolute;
+	    left: 0;
+	    top: 11px;
+	}
+	#wallet .content {
+		margin-left: 20px;
+	}
+
+	/* Community */
+	#KryptoniaCommunity:before {
+		width: 80%;
+	}
+
+	/* ROAD MAP */
+	#roadmap {
+		margin: 0;
+	}
+	.timeline {
+		margin: 30px 10px;
+	}
+
+	.timeline .timelineContainer {
+		max-width: 600px;
+		width: 100%;
+		height: auto;
+		margin: 40px auto;
+	}
+	.timeline .left .timelineContent, 
+	.timeline .right .timelineContent {
+		left: auto;
+		right: auto;
+		position: relative;
+	}
+
+	.timeline .left::before,
+	.timeline .right::before {
+		display: none;
+	}
+
+	.timeline .right,
+	.timeline .right::after {
+		left: 0;
+	}
+
+	.timeline .timelineContainer::after {
+	    border: 1px solid #ccc;
+	    text-align: right;
+	    width: auto;
+	    height: auto;
+	    top: -15px;
+	    left: 8px;
+	    right: auto;
+	    border-radius: 0;
+	    box-shadow: none;
+	    padding: 0px 20px !important;
+	    line-height: 1.5 !important;
+	}
+
+	.timeline .timelineContent {
+		height: auto;
+		max-width: 600px;
+		width: 100%;
+	}
+
+	.timeline .timelineContainer.twelve.left {
+		height: auto;
+	}
+
+	.timeline .left .timelineContent:after,
+	.timeline .right .timelineContent:before{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	header .top {
+		padding: 120px 0 10px 0; 
+	}
+	header .box.private {
+		margin: 0;
+	}
+	header .box {
+		max-width: 100%;
+		overflow: hidden;
+		text-align: left;
+	}
+	header .box img {
+		float: none;
+		margin: 0 auto;
+	}	
+	header h3 {
+		font-size: 16px;
+	}
+
+}	
+
+@media only screen and (max-width: 414px) and (max-height: 812px) {
+
+	header .col-md-4 {
+		width: 100%;
+	}
+	header .box {
+		padding: 0 40px;
+	}
+	header .box img {
+		float: left;
+		max-width: 100px;
+	}
+	header h3 {
+	    font-size: 20px;
+	    line-height: 1.5;
+	    margin: 30px 0 0 0;
+	}
+
+
+	#about .left .title:after,
+	#about .left .title:before,
+	#about .right .title:before,
+	#about .right .title:after,
+	#wallet .title:before,
+	#wallet .title:after,
+	#roadmap .title:before,
+	#roadmap .title:after {
+		width: 10px;
+	}
+
+	#about .left .content,
+	#about .right .content,
+	#wallet .content {
+		margin: 0 10px;
+	}
+
+	#KryptoniaCommunity:before {
+		font-size: 20px !important;
+	}
+
+	#roadmap .title:before,
+	#roadmap .title:after {
+		top: 7px;
+	}
+}
